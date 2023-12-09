@@ -1,10 +1,11 @@
 import { useState, useRef, useEffect } from "react";
+
 import "./App.css";
-import "../src/assets/images/icon-minus.svg";
-import iconStar from "../src/assets/images/icon-star.svg"
-import  "../src/assets/images/icon-plus.svg";
-import  "../src/assets/images/background-pattern-desktop.svg";
-import  "../src/assets/images/background-pattern-mobile.svg";
+import "./assets/images/icon-minus.svg";
+import iconStar from "./assets/images/icon-star.svg"
+import  "./assets/images/icon-plus.svg";
+import  "./assets/images/background-pattern-desktop.svg";
+import  "./assets/images/background-pattern-mobile.svg";
 
 const FAQItem = ({question, answer, toggle, onToggle}:any) => {
   const[heightEl, setHeightEl] = useState<string | undefined>(undefined);
