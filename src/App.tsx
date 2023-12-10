@@ -26,7 +26,7 @@ const FAQItem = ({question, answer, toggle, onToggle}:any) => {
           <h4 className="question">{question}</h4>
           <button onClick={()=> onToggle(question)} className="button">
               
-            <img src={toggle===question ? "../public/images/icon-minus.svg": "../public/images/icon-plus.svg"} alt=""></img>
+            <img src={toggle===question ? "./public/images/icon-minus.svg": "./public/images/icon-plus.svg"} alt=""></img>
       
           </button>
         </div>
