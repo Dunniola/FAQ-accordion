@@ -1,11 +1,11 @@
 import { useState, useRef, useEffect } from "react";
 
 import "./App.css";
-import  "../public/images/background-pattern-desktop.svg";
-import "../public/images/background-pattern-mobile.svg";
-import "../public/images/icon-minus.svg";
-import  "../public/images/icon-plus.svg";
-import iconStar from "../public/images/icon-star.svg";
+import  "/images/background-pattern-desktop.svg";
+import "/images/background-pattern-mobile.svg";
+import "/images/icon-minus.svg";
+import  "/images/icon-plus.svg";
+import iconStar from "/images/icon-star.svg";
 const FAQItem = ({question, answer, toggle, onToggle}:any) => {
   const[heightEl, setHeightEl] = useState<string | undefined>(undefined);
   const refHeight = useRef<HTMLDivElement>(null);
@@ -26,7 +26,7 @@ const FAQItem = ({question, answer, toggle, onToggle}:any) => {
           <h4 className="question">{question}</h4>
           <button onClick={()=> onToggle(question)} className="button">
               
-            <img src={toggle===question ? "./public/images/icon-minus.svg": "./public/images/icon-plus.svg"} alt=""></img>
+            <img src={toggle===question ? "/images/icon-minus.svg": "/images/icon-plus.svg"} alt=""></img>
       
           </button>
         </div>

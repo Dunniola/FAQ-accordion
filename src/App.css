@@ -12,7 +12,7 @@ body{
     display: grid;
     place-content: center;
     font-size: 1rem;
-    background-image: url(../src/assets/images/background-pattern-desktop.svg);
+    background-image: url(/images/background-pattern-desktop.svg);
     background-color:hsl(275, 100%, 97%);
     background-repeat: no-repeat;
     background-size: auto;
@@ -89,7 +89,7 @@ p{
 @media(max-width:960px){
     body{
        min-height: 100vh;
-        background-image: url(../src/assets/images/background-pattern-mobile.svg);
+        background-image: url(/images/background-pattern-mobile.svg);
         background-size: contain;
          background-color:hsl(275, 100%, 97%); 
         
