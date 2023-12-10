@@ -1,4 +1,4 @@
-# Frontend Mentor - Social proof section solution
+# Frontend Mentor - FAQ accordion solution
 
 This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-proof-section-6e0qTv_bA). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
