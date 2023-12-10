@@ -3,8 +3,8 @@ import { useState, useRef, useEffect } from "react";
 import "./App.css";
 import  "/images/background-pattern-desktop.svg";
 import "/images/background-pattern-mobile.svg";
-import "/images/icon-minus.svg";
-import  "/images/icon-plus.svg";
+import iconMinus from "/images/icon-minus.svg";
+import  iconPlus from "/images/icon-plus.svg";
 import iconStar from "/images/icon-star.svg";
 const FAQItem = ({question, answer, toggle, onToggle}:any) => {
   const[heightEl, setHeightEl] = useState<string | undefined>(undefined);
@@ -26,7 +26,11 @@ const FAQItem = ({question, answer, toggle, onToggle}:any) => {
           <h4 className="question">{question}</h4>
           <button onClick={()=> onToggle(question)} className="button">
               
-            <img src={toggle===question ? "/images/icon-minus.svg": "/images/icon-plus.svg"} alt=""></img>
+            <div>{toggle===question ?(
+            <img src={iconMinus} alt="" />) : (
+              <img src={iconPlus}alt="" />
+            )} 
+            </div>
       
           </button>
         </div>
