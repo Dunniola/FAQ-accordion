@@ -25,13 +25,9 @@ const FAQItem = ({question, answer, toggle, onToggle}:any) => {
         <div className="flex">
           <h4 className="question">{question}</h4>
           <button onClick={()=> onToggle(question)} className="button">
-            <img
-              src={
-                toggle===question
-                  ? '../assets/images/icon-minus.svg'
-                  : '../assets/images/icon-plus.svg'
-              }
-            />
+              
+            <img src={toggle===question ? "../assets/images/icon-minus.svg": "../assets/images/icon-plus.svg"} alt=""></img>
+      
           </button>
         </div>
         <div
